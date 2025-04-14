@@ -30,36 +30,32 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
-	/* Responsive adjustments */
 @media (max-width: 767px) {
-  /* Stack columns vertically */
+  /* Adjust button sizes */
+  .eael-creative-button {
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+    margin: 5px 0 !important;
+  }
+  
+  /* Fix text alignment */
+  .elementor-widget-text-editor p {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+}
+	.token-address {
+  word-break: break-all;
+  font-size: 12px;
+}
+	img {
+  max-width: 100%;
+  height: auto !important;
+}
+	@media (max-width: 767px) {
   .elementor-column {
     width: 100% !important;
-  }
-  
-  /* Adjust font sizes */
-  .elementor-heading-title {
-    font-size: 1.5rem !important;
-  }
-  
-  /* Make images fluid */
-  .elementor-widget-image img {
-    width: auto !important;
-    max-width: 100% !important;
-    height: auto !important;
-  }
-  
-  /* Adjust the rotating sloth image */
-  .e-transform img {
-    width: 200px !important;
-    height: 200px !important;
-    margin-top: 0 !important;
-  }
-  
-  /* Improve button sizes */
-  .eael-creative-button {
-    padding: 12px 24px !important;
-    font-size: 16px !important;
+    margin-bottom: 20px;
   }
 }
 </style>
