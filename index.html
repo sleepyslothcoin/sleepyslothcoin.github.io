@@ -30,19 +30,32 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
-	<style>
-  img, iframe {
+<style>
+  /* Make images responsive */
+  img {
     max-width: 100%;
     height: auto;
   }
 
+  /* Fix column widths on mobile */
   .elementor-column {
     width: 100% !important;
     display: block;
   }
 
+  /* Prevent horizontal scrolling on small screens */
   body {
     overflow-x: hidden;
+  }
+
+  /* Adjust text size on small screens */
+  @media (max-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 1.2em !important;
+    }
+    p {
+      font-size: 1em !important;
+    }
   }
 </style>
 
