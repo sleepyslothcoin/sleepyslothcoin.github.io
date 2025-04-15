@@ -30,6 +30,46 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
+	body, html {
+  overflow-x: hidden; /* Hides horizontal scrollbar */
+  width: 100%;
+}
+/* Force the menu container to be full width */
+.elementskit-menu-container {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scroll */
+  overflow-y: hidden; /* Disable vertical scroll */
+  white-space: nowrap; /* Keep items in single line */
+  -webkit-overflow-scrolling: touch; 
+}
+
+/* Reset the list layout */
+.ekit-navbar-nav {
+  display: flex !important; /* Override any other rules */
+  justify-content: center !important;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px; /* Adjust spacing as needed */
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+.elementskit-menu-container {
+  min-width: 1000px; /* Adjust based on your content */
+/* Allows horizontal scrolling if needed */
+}
+/* Remove margins from list items */
+.ekit-navbar-nav .nav-item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Style links */
+.ekit-navbar-nav .ekit-menu-nav-link {
+  white-space: nowrap;
+  display: block;
+  padding: 10px 15px; /* Adjust padding as needed */
+}
 </style>
 	<link rel='stylesheet' id='loftloader-style-css' href='wp-content/plugins/loftloader-pro/assets/css/loftloader.min3a45.css?ver=2022022501' media='all' />
 <style id='loftloader-style-inline-css'>
@@ -185,7 +225,8 @@ loftloaderProInsertStyle( 'loftloader-pro-progress-percentage-style', percentage
 			<div class="ekit-wid-con ekit_menu_responsive_tablet" data-hamburger-icon="" data-hamburger-icon-type="icon" data-responsive-breakpoint="1024">            <button class="elementskit-menu-hamburger elementskit-menu-toggler"  type="button" aria-label="hamburger-icon">
                                     <span class="elementskit-menu-hamburger-icon"></span><span class="elementskit-menu-hamburger-icon"></span><span class="elementskit-menu-hamburger-icon"></span>
                             </button>
-            <div id="ekit-megamenu-menuu" class="elementskit-menu-container elementskit-menu-offcanvas-elements elementskit-navbar-nav-default elementskit_line_arrow ekit-nav-menu-one-page-no ekit-nav-dropdown-hover"><ul id="menu-menuu" class="elementskit-navbar-nav elementskit-menu-po-center submenu-click-on-icon"><li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="#About" class="ekit-menu-nav-link">About</a></li>
+            <div id="ekit-megamenu-menuu" class="elementskit-menu-container elementskit-menu-offcanvas-elements elementskit-navbar-nav-default elementskit_line_arrow ekit-nav-menu-one-page-no ekit-nav-dropdown-hover"><ul id="menu-menuu" class="elementskit-navbar-nav elementskit-menu-po-center submenu-click-on-icon"><li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="#About" class="ekit-menu-nav-link"style="margin-left:-200px;">About</a></li><li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://sleepyslothminer.github.io/" class="ekit-menu-nav-link"style="margin-left:-100px;">Mining</a></li>
+				
 <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="#Tokenomics" class="ekit-menu-nav-link">Tokenomics</a></li>
 <li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="#Roadmap" class="ekit-menu-nav-link">Roadmap</a></li>
 <li id="menu-item-910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-910 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="#Team" class="ekit-menu-nav-link">Team</a></li>
