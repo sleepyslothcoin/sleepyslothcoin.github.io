@@ -30,7 +30,21 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
+/* Default styles for all devices */
+.elementskit-navbar-nav .nav-item a {
+  /* Remove inline styles and apply them here */
+}
 
+/* Styles for mobile devices */
+@media screen and (max-width: 767px) {
+  #menu-item-11 a, 
+  #menu-item-12 a,
+  #menu-item-14 a,
+  #menu-item-910 a,
+  #menu-item-911 a {
+    margin-left: 0 !important; /* Override the inline styles */
+  }
+}
 </style>
 	<link rel='stylesheet' id='loftloader-style-css' href='wp-content/plugins/loftloader-pro/assets/css/loftloader.min3a45.css?ver=2022022501' media='all' />
 <style id='loftloader-style-inline-css'>
